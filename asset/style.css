@@ -34,7 +34,7 @@ p{
 .container{
     max-width: 1400px;
     margin: auto;
-    padding-left: 25px;
+    padding-left: 50px;
     padding-right: 25px;
 }
 .row{
@@ -267,9 +267,315 @@ select{
 
 }
 .col-7 .detail ul{
-    list-style-type: square;
+    list-style-type: circle;
+}
+.single-product .col-7{
+    padding: 20px ;
+}
+.single-product h3{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product input{
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #000 ; 
+    
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 44%;
+    cursor: pointer;
+}
+/* --------------------------About-------------------------------------- */
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    /* background-color: #282828; */
+    padding: 60px;
+}
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 40px;
+}
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #585858;
+    margin-bottom: 50px;
 }
 
+.ps {
+    display: block;
+    margin: 0 30px;
+   
+    /* overflow: hidden; */
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+}
+.ps img{
+    
+    filter: grayscale(60%);
+    transition: 0.4s all;
+    display: inline-block;
+    height: 300px;
+    
+}
+.ps img:hover{
+    filter: none;
+}
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    text-align: justify;
+    display: inline-block;
+    /* position: relative; */
+
+    /* height: 0;
+    overflow: hidden; */
+    
+}
+#p2, #p3{
+    visibility: hidden;
+
+}
+/* .section:target{
+    height: auto;
+  } */
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000;
+    
+}
+/* --------------------------------Contact---------------------------------------- */
+.contact{
+    /* position: relative; */
+    min-height: 100vh;
+    padding: 50px 100px ;
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.contact .content p{
+    font-weight: 300px; 
+    margin-top: 15px;   
+}
+.container1{
+    width: 100%;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+
+}
+/* .container1 .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+} */
+.container1 .contactInfo .box{
+    position: relative;
+    padding: 20px;
+    display:flex;
+}
+.container1 .contactInfo .box .icon{
+    min-width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container1 .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container1 .contactInfo .box .text h3{
+    font-weight: 500;
+}
+.contactForm{
+    width: 40%;
+    padding: 50px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    resize:none;
+}
+.contactForm .inputBox span{
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #333;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #333;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox .btn{
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+/* -----------------------------------account-page------------------------------ */
+/* .form-box{
+    width: 320px;
+    height: 400px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+.form-btn span{
+    font-weight: bold;
+    padding: 0 40px;
+    color: #000;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+    margin: 20px;
+}
+.input-feild{
+    width: 80%;
+    padding: 10px 0;
+    margin: 10px 35px;
+    border: 1px solid #ccc;
+    outline: none; 
+} 
+form .btn{
+    width: 80%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 35px
+}
+form .btn:focus{
+    outline: none;
+}
+.check-box{
+    margin: 30px 10px 30px 35px;
+}
+span{
+    color: #777;
+        
+}  */
+
+
+/* ----------------------------cart items----------------------------- */
+
+.cart-page{
+    margin: 80px auto;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+td img{
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #ffffff;
+    background: #000;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #787878;
+    font-size: 12px;
+    text-decoration: none;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #000;
+    width: 100%;
+    max-width: 227px
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
 
 
 /* ---------------------------media query for menu------------------------- */
@@ -306,13 +612,40 @@ select{
         cursor: pointer;
     }
 }
+/* -------------------------media query contact------------------------ */
+@media (max-width: 991px){
+    .content h2{
+        font-size: 15px;
+    }
+    .content p{
+        text-align: center;
+        padding: 0 15px;
+    }
+    .contact{
+        padding: 20px 30px;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    /* .contactInfo{
+         margin-right: 350px;
+    } */
+    .container1, .contactInfo, .contactForm{
+        width: 100%;
+    }
+    .contactForm{
+        padding: 15px;
+        margin-top: 30px;
+    }
+}
 /* ---------------------------media query for less than 600px----------------------- */
 @media only screen and (max-width:600px){
-    .row{
+    .row, .team-section{
         text-align: center;
         align-items: center;
         margin: auto;
-        /* justify-content: center; */
+        justify-content: center;
+        
     }
     .testimonial .col-5{
         padding-left: 0;
@@ -322,18 +655,27 @@ select{
         flex-basis: 100%;
     }
 }
-@media (min-width:1024px) and (max-width:1439px){
-    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-        min-width: 100px;
-    }
-    .footer-col-4, .footer-col-1 {
-        margin-left: 25px;
+@media  (min-width:320px) and (max-width:767px){
+    
+    .small-container, .container{
+        padding-left: 25px;
     }
     .col-6{
-        min-width: 100px;
-        margin-left: 75px;
+        margin-left: 0px;
     }
+    .col-5{
+        margin-left: 20px;
+        flex-basis: 90%;
+    }
+    .footer-col-1{
+        margin-right: 55px;
+    }
+    
+    
 }
+
+
+
 @media (min-width:768px) and (max-width:1023px){
     .col-1{
         flex-basis: 55%;
@@ -342,8 +684,11 @@ select{
     .col-2{
         flex-basis: 30%;
         min-width: 120px;
-        margin-left: 100px;
+        margin-left: 80px;
 
+    }
+    .offer .small-container .row .col-2, .col-6{
+        margin-right: 150px;
     }
     .col-2 img{
        max-width: 100%;
@@ -364,30 +709,47 @@ select{
     .col-5{
         min-width: 100px;
         flex-basis: 60%;
-        margin-left: 90px;
+        margin-left: 125px;
     }
     .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
         min-width: 100px;
     }
     .footer-col-4, .footer-col-1 {
-        margin-left: 25px;
+        margin-left: 0.5px;
     }
     .footer-col-1 {
         padding-top: 5em;
     }
 
 }
-@media  (min-width:320px) and (max-width:767px){
-    
-    .small-container, .container{
-        padding-left: 25px;
+@media (min-width:1024px) and (max-width:1439px){
+    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+        min-width: 10px;
+        margin-right: 25px;
+    }
+    .footer-col-4, .footer-col-1 {
+        margin-left: 25px;
     }
     .col-6{
-        margin-left: 60px;
+        min-width: 100px;
+        margin-left: 70px;
     }
-    .col-5{
-        margin-left: 30px;
-        flex-basis: 90%;
+    .small-container{
+        margin-right: 55px;
+    }
+    .container .col-2{
+        margin-left: 75px;
     }
 }
-
+@media (min-width:1440px) and (max-width:2559px){
+    .categories .row{
+        margin-right: 50px;
+    }
+    .col-5{
+        margin-left: 7px;
+    }
+    .product{
+        margin-right: 50px;
+    }
+    
+}
